@@ -40,7 +40,7 @@ ggplot(participant_data, aes(x = age, y = lesion_number)) +
   )
 ```
 
-![Description](https://github.com/LK-Github-lgtm/LK-Github-lgtm/blob/main/file_show.png)
+![Description](https://github.com/LK-Github-lgtm/in2science/blob/main/file_show.png)
 
 
 
