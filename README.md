@@ -51,4 +51,3 @@ Using ChatGPT to provide code in response to specific instructions...
 
 Which I would then copy and paste, into Posit Cloud (R) and run it to produce the results.
 
-To improve our plots, we provided specific instructi
