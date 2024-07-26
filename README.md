@@ -41,7 +41,7 @@ ggplot(participant_data, aes(x = age, y = lesion_number)) +
 ```
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/file_show.png" width="60%">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/file_show.png" width="90%">
 </div>
 
 
@@ -67,7 +67,7 @@ ggplot(participant_data, aes(x = bmi, y = lesion_number)) +
 ```
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/bmi_lesion_number.png" width="60%">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/bmi_lesion_number.png" width="90%">
 </div>
 
 ## Graphs to show the height, age and weight in participants
@@ -99,7 +99,7 @@ grid.arrange(height_plot, weight_plot, age_plot, ncol = 3)
 ```
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/height_weight_age.png" width="60%">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/height_weight_age.png" width="90%">
 </div>
 
 ## Calculating the p and r value
