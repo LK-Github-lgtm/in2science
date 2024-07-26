@@ -96,3 +96,28 @@ grid.arrange(height_plot, weight_plot, age_plot, ncol = 3)
 ```
 
 ![Description](https://github.com/LK-Github-lgtm/in2science/blob/main/height_weight_age.png)
+
+## Calculating the p and r value
+
+To see if the results we found were significant, we decided to run a statistical test.
+
+### Calculate p-value using correlation test on filtered data
+> cor_test <- cor.test(participant_data$age, participant_data$lesion_number)
+> p_value_cor <- cor_test$p.value
+
+### Print the results
+> cat("P-value from correlation test (lesion_number ≤ 20):", p_value_cor, "\n")
+> cat("R-squared value:", r_squared, "\n")
+
+And here are the results for age vs lesion number:
+
+> cat("P-value from correlation test (lesion_number ≤ 20):", p_value_cor, "\n")
+
+P-value from correlation test (lesion_number ≤ 20): 0.0008118473
+
+> cat("R-squared value:", r_squared, "\n")
+
+R-squared value: 0.2026725
+
+
+
