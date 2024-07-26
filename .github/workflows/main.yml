@@ -10,17 +10,27 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
       
-    - name: Convert README to HTML
+    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '20'
         
-    - run: |
+    - name: Convert README to HTML
+      run: |
         npm install -g marked
         marked README.md -o index.html
         
+    - name: Debug git configuration
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git remote -v
+        git branch -a
+        git status
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
