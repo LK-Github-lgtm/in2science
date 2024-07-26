@@ -43,11 +43,26 @@ ggplot(participant_data, aes(x = age, y = lesion_number)) +
 ![Description](https://github.com/LK-Github-lgtm/in2science/blob/main/file_show.png)
 
 
+## BMI and Lesion Number
+
+We wanted to see if there was a relatiionship between lesion number and BMI and so we plotted a graph to show the correlation.
+
+```r
+ggplot(participant_data, aes(x = bmi, y = lesion_number)) +
+  geom_point(color = "darkblue", size = 3, alpha = 0.6) +   # Adjust point color, size, and transparency
+  labs(title = "Relationship between BMI and Lesion Number",
+       x = "BMI",
+       y = "Lesion Number") +
+  theme_minimal(base_size = 15) +                            # Use a minimal theme with larger base font size
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),   # Center the plot title and make it bold
+    axis.title.x = element_text(margin = margin(t = 10)),    # Add margin to the x-axis title
+    axis.title.y = element_text(margin = margin(r = 10)),    # Add margin to the y-axis title
+    panel.grid.major = element_line(color = "gray80"),       # Lighten the grid lines
+    panel.grid.minor = element_line(color = "gray90")        # Lighten the minor grid lines
+  ) +
+  geom_smooth(method = "lm", color = "red", se = FALSE, linetype = "dashed") # Add a regression line
+```
 
 
-
-
-Using ChatGPT to provide code in response to specific instructions...
-
-Which I would then copy and paste, into Posit Cloud (R) and run it to produce the results.
 
