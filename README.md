@@ -40,7 +40,7 @@ ggplot(participant_data, aes(x = age, y = lesion_number)) +
   )
 ```
 
-![Description](https://raw.githubusercontent.com/LK-Github-lgtm/in2science/blob/main/file_show.png)
+![Description]({% raw %}{{ site.baseurl }}{% endraw %}/file_show.png)
 
 
 ## BMI and Lesion Number
@@ -64,8 +64,7 @@ ggplot(participant_data, aes(x = bmi, y = lesion_number)) +
   geom_smooth(method = "lm", color = "red", se = FALSE, linetype = "dashed") # Add a regression line
 ```
 
-![Description](https://raw.githubusercontent.com/LK-Github-lgtm/in2science/blob/main/bmi_lesion_number.png)
-
+![Description]({% raw %}{{ site.baseurl }}{% endraw %}/bmi_lesion_number.png)
 
 ## Graphs to show the height, age and weight in participants
 
@@ -95,7 +94,7 @@ age_plot <- ggplot(participant_data, aes(x = age)) +
 grid.arrange(height_plot, weight_plot, age_plot, ncol = 3)
 ```
 
-![Description](https://raw.githubusercontent.com/LK-Github-lgtm/in2science/blob/main/height_weight_age.png)
+![Description]({% raw %}{{ site.baseurl }}{% endraw %}/height_weight_age.png)
 
 ## Calculating the p and r value
 
