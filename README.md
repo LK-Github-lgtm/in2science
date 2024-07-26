@@ -1,4 +1,4 @@
-# Title
+# Data Plotting and Analysis on my In2Science Placement
 
 ## Background
 On Wednesday, we were taught how to interpret data and turn it into a graph using code.
