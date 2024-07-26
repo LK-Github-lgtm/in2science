@@ -64,5 +64,35 @@ ggplot(participant_data, aes(x = bmi, y = lesion_number)) +
   geom_smooth(method = "lm", color = "red", se = FALSE, linetype = "dashed") # Add a regression line
 ```
 
+![Description](https://github.com/LK-Github-lgtm/in2science/blob/main/bmi_lesion_number.png)
 
 
+## Graphs to show the height, age and weight in participants
+
+We wanted to compare the participants height, age and weight to see if there was a correlation between the three.
+
+```r
+# Create each plot separately
+height_plot <- ggplot(participant_data, aes(x = height)) + 
+  geom_histogram(aes(y = ..density..), binwidth = 0.01, fill = "blue", color = "black", alpha = 0.7) +
+  geom_density(color = "red", size = 1) +
+  labs(title = "Histogram of Height", x = "Height", y = "Density") +
+  theme_minimal()
+
+weight_plot <- ggplot(participant_data, aes(x = weight)) + 
+  geom_histogram(aes(y = ..density..), binwidth = 1, fill = "green", color = "black", alpha = 0.7) +
+  geom_density(color = "red", size = 1) +
+  labs(title = "Histogram of Weight", x = "Weight", y = "Density") +
+  theme_minimal()
+
+age_plot <- ggplot(participant_data, aes(x = age)) + 
+  geom_histogram(aes(y = ..density..), binwidth = 1, fill = "red", color = "black", alpha = 0.7) +
+  geom_density(color = "blue", size = 1) +
+  labs(title = "Histogram of Age", x = "Age", y = "Density") +
+  theme_minimal()
+
+# Combine the plots side by side
+grid.arrange(height_plot, weight_plot, age_plot, ncol = 3)
+```
+
+![Description](https://github.com/LK-Github-lgtm/in2science/blob/main/height_weight_age.png)
