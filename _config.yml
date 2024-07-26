@@ -1,0 +1,6 @@
+baseurl: /in2science
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+theme: jekyll-theme-minimal
