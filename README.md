@@ -67,7 +67,7 @@ ggplot(participant_data, aes(x = bmi, y = lesion_number)) +
 ```
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/bmi_lesion_number.png" width="90%">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/bmi_lesion_number.png" width="900%">
 </div>
 
 ## Graphs to show the height, age and weight in participants
