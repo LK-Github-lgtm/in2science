@@ -33,7 +33,11 @@ ggplot(participant_data, aes(x = age, y = lesion_number)) +
     panel.grid.minor = element_line(color = &quot;gray95&quot;, size = 0.2)  # Light minor grid lines
   )
 </code></pre>
-<p>![Description]({% raw %}{{ site.baseurl }}{% endraw %}/file_show.png)</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/file_show.png" width="60%">
+</div>
+
+
 <h2>BMI and Lesion Number</h2>
 <p>We wanted to see if there was a relatiionship between lesion number and BMI and so we plotted a graph to show the correlation.</p>
 <pre><code class="language-r">ggplot(participant_data, aes(x = bmi, y = lesion_number)) +
@@ -51,7 +55,10 @@ ggplot(participant_data, aes(x = age, y = lesion_number)) +
   ) +
   geom_smooth(method = &quot;lm&quot;, color = &quot;red&quot;, se = FALSE, linetype = &quot;dashed&quot;) # Add a regression line
 </code></pre>
-<p>![Description]({% raw %}{{ site.baseurl }}{% endraw %}/bmi_lesion_number.png)</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/bmi_lesion_number.png" width="60%">
+</div>
+
 <h2>Graphs to show the height, age and weight in participants</h2>
 <p>We wanted to compare the participants height, age and weight to see if there was a correlation between the three.</p>
 <pre><code class="language-r"># Create each plot separately
@@ -76,7 +83,10 @@ age_plot &lt;- ggplot(participant_data, aes(x = age)) +
 # Combine the plots side by side
 grid.arrange(height_plot, weight_plot, age_plot, ncol = 3)
 </code></pre>
-<p>![Description]({% raw %}{{ site.baseurl }}{% endraw %}/height_weight_age.png)</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LK-Github-lgtm/in2science/main/height_weight_age.png" width="60%">
+</div>
+
 <h2>Calculating the p and r value</h2>
 <p>To see if the results we found were significant, we decided to run a statistical test.</p>
 <h3>Calculate p-value using correlation test on filtered data</h3>
